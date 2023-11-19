@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLayout">
+
+
+    <!-- NumberPicker 및 Button을 가로로 나란히 배치하고 화면 가운데에 위치시킴 -->
+    <LinearLayout
+        android:id="@+id/numberPickerLayout"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/yearPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="181dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="년"
+                android:fontFamily="@font/calendar_font"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <NumberPicker
+            android:id="@+id/monthPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="181dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/monthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="월"
+                android:fontFamily="@font/calendar_font"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <NumberPicker
+            android:id="@+id/dayPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="181dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="일"
+                android:fontFamily="@font/calendar_font"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 각 날짜 아래에 버튼과 년/월/일 텍스트를 배치 -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberPickerLayout"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- (이동) 버튼 -->
+        <Button
+            android:id="@+id/moveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이동"
+            android:fontFamily="@font/calendar_font"/>
+
+        <!-- (뒤로) 버튼 -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뒤로"
+            android:fontFamily="@font/calendar_font"/>
+    </LinearLayout>
+
+    <!-- 년/월/일 텍스트 추가 -->
+    <LinearLayout
+        android:id="@+id/dateTextLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberPickerLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/otherView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 나머지 화면 구성 요소들 추가 -->
+</RelativeLayout>

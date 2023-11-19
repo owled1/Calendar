@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="126dp"
+        android:fontFamily="@font/calendar_font"
+        android:text="환영합니다!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_nickname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="85dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_nickname"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_calendar" />
+
+        <EditText
+            android:id="@+id/edit_nickname"
+            android:layout_width="276dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/rectangle_button_background"
+            android:backgroundTint="@color/lightGray"
+            android:fontFamily="@font/calendar_font"
+            android:hint="닉네임"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.103"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="277dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangle_button_background"
+        android:backgroundTint="@color/lightGray"
+        android:fontFamily="@font/calendar_font"
+        android:hint="아이디"
+        app:layout_constraintBottom_toTopOf="@+id/tv_duplicate_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_nickname" />
+
+    <Button
+        android:id="@+id/btnDuplicatecheck"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle_button_background"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/calendar_font"
+        android:text="중복확인"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/edit_username"
+        app:layout_constraintTop_toTopOf="@+id/edit_username" />
+
+    <TextView
+        android:id="@+id/tv_duplicate_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/edit_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_button_background"
+        android:backgroundTint="@color/lightGray"
+        android:fontFamily="@font/calendar_font"
+        android:hint="비밀번호"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_duplicate_message" />
+
+    <EditText
+        android:id="@+id/edit_password_match"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rectangle_button_background"
+        android:backgroundTint="@color/lightGray"
+        android:fontFamily="@font/calendar_font"
+        android:hint="비밀번호 확인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
+
+    <TextView
+        android:id="@+id/tv_password_match_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_match" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_button_background"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/calendar_font"
+        android:text="가입하기"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password_match_message"
+        tools:ignore="TextSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

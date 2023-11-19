@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editiSearch"
+    android:layout_width="386dp"
+    android:layout_height="282dp"
+    tools:visibility="visible">
+
+
+    <EditText
+        android:id="@+id/editScheduleTitle"
+        android:layout_width="359dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="일정 제목"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/editScheduleContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="일정 제목" />
+
+    <EditText
+        android:id="@+id/editScheduleContent"
+        android:layout_width="367dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:hint="세부사항"
+        android:inputType="text"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editScheduleTitle" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="384dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnSaveSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="저 장"
+            android:textSize = "15sp"
+            android:backgroundTint="@color/lightGray"
+            android:fontFamily="@font/calendar_font"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="뒤 로"
+            android:textSize = "15sp"
+            android:backgroundTint="@color/lightGray"
+            android:fontFamily="@font/calendar_font"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="388dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editScheduleContent">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="고정 기념일로 저장" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="데드라인 설정" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

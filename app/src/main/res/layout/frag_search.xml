@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="386dp"
+    android:layout_height="282dp">
+
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="321dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="일정을 검색하세요."
+        android:inputType="text"
+        android:text=" "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSearchSchedule"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/ic_search"
+        android:contentDescription="@string/app_name"
+        android:text="@string/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="384dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                android:fontFamily="@font/calendar_font"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

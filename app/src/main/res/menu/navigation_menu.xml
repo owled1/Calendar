@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+            <item android:id="@+id/access"
+                android:icon="@drawable/baseline_accessibility_24"
+                android:title="내 정보"/>
+
+            <item android:id="@+id/access2"
+                android:icon="@drawable/baseline_exit_to_app_24"
+                android:title="로그아웃"/>
+
+            <item android:id="@+id/access3"
+                android:icon="@drawable/baseline_accessibility_24"
+                android:title="색상 변경"/>
+
+
+        </group>
+</menu>

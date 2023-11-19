@@ -1,0 +1,42 @@
+<resources>
+<style name="NoBorderEditTextStyle">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">44dp</item>
+    <item name="android:hint">닉네임</item>
+    <item name="android:layout_marginTop">16dp</item>
+    <item name="android:layout_marginEnd">16dp</item>
+    <item name="android:layout_marginStart">16dp</item>
+    <item name="android:layout_marginBottom">16dp</item>
+    <item name="android:background">@android:color/transparent</item> <!-- 배경 투명 설정 -->
+</style>
+
+    <!-- CalenderViewCustom 스타일 정의 -->
+<style name="CalenderViewCustom" parent="Theme.AppCompat">
+    <item name="android:fontFamily">@font/calendar_font</item>
+<item name="colorControlActivated">@color/yellow</item>
+<item name="android:textColorPrimary">@color/black</item>
+</style>
+
+    <!-- CalenderViewWeekCustomText 스타일 정의 -->
+<style name="CalenderViewWeekCustomText">
+
+    <item name="android:textColor">@color/black</item>
+    <item name="android:fontFamily">@font/calendar_font</item>
+
+    </style>
+    <style name="CalenderViewDateCustomText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/calendar_font</item>
+    </style>
+
+
+<style name="CalenderViewmonthCustomText">
+<item name="android:textColor">@color/black</item>
+    <item name="android:fontFamily">@font/calendar_font</item></style>
+    <style name="CalendarWidgetHeader">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/calendar_font</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
